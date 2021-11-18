@@ -1,10 +1,14 @@
+<script>
+	import ProductList from '$lib/ProductList.svelte';
+</script>
+
 <svelte:head>
 	<title>Fake Store</title>
 </svelte:head>
 
-<section>
-	<h1>Fake Store Api Svelte</h1>
-</section>
+<div>
+	<ProductList />
+</div>
 
 <style>
 </style>
