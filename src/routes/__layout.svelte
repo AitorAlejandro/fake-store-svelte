@@ -1,45 +1,38 @@
 <script>
-	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
 </script>
 
-<Header />
+<svelte:head>
+    <!-- CSS Reset -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- Milligram CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+</svelte:head>
 
+<header class="main-header">
+	<h1>Fake Store</h1>
+</header>
 <main>
 	<slot />
 </main>
-
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+<footer class="main-footer">
+	{new Date().getFullYear()} &copy; Fake Store
 </footer>
 
 <style>
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
+.main-header {
+	background-color: #eaeaea;
+	text-align: center;
+}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	}
+.main-footer {
+	background-color: #eaeaea;
+	text-align: center;
+}
 </style>
