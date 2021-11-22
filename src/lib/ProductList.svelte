@@ -1,16 +1,11 @@
 <script>
 	import { onMount } from 'svelte';
-	import axios from 'axios';
+	import { ProductService } from '../core/application';
 
 	let products = [];
 
 	onMount(async function () {
-		try {
-			const response = await axios.get('https://fakestoreapi.com/products');
-			products = response.data;
-		} catch (error) {
-			console.error(error);
-		}
+		products = await ProductService.GetProducts();
 	});
 </script>
 
