@@ -7,9 +7,12 @@
 </svelte:head>
 
 <div>
-	<h2 style="text-align: center;">Welcome to Fake Store</h2>
+	<h2 class="page-title">Welcome to Fake Store</h2>
 	<ProductList />
 </div>
 
 <style>
+.page-title {
+	text-align: center;
+}
 </style>

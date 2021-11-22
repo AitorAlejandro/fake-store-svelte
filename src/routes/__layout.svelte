@@ -15,15 +15,24 @@
     />
 </svelte:head>
 
-<header>
-	<h1 style="text-align: center;">Fake Store</h1>
+<header class="main-header">
+	<h1>Fake Store</h1>
 </header>
 <main>
 	<slot />
 </main>
-<footer style="text-align: center;">
+<footer class="main-footer">
 	{new Date().getFullYear()} &copy; Fake Store
 </footer>
 
 <style>
+.main-header {
+	background-color: #eaeaea;
+	text-align: center;
+}
+
+.main-footer {
+	background-color: #eaeaea;
+	text-align: center;
+}
 </style>
