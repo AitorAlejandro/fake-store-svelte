@@ -16,13 +16,13 @@
 </svelte:head>
 
 <header>
-	<h1>Fake Store Home</h1>
+	<h1 style="text-align: center;">Fake Store</h1>
 </header>
 <main>
 	<slot />
 </main>
-<footer>
-	{new Date().getFullYear()} &copy; Fake Store Api
+<footer style="text-align: center;">
+	{new Date().getFullYear()} &copy; Fake Store
 </footer>
 
 <style>

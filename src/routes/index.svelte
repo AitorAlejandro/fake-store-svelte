@@ -3,10 +3,11 @@
 </script>
 
 <svelte:head>
-	<title>Fake Store</title>
+	<title>Fake Store Svelte - Aitor Alejandro</title>
 </svelte:head>
 
 <div>
+	<h2 style="text-align: center;">Welcome to Fake Store</h2>
 	<ProductList />
 </div>
 
